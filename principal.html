@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Day ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Georgia,serif;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(20,20,20,.35),
+        rgba(20,20,20,.55)
+    ),
+    url("bosque.jpeg");
+
+    background-size:105%;
+    background-position:center;
+
+    animation:fondo 25s ease-in-out infinite alternate;
+
+    color:white;
+
+}
+
+@keyframes fondo{
+
+    from{
+
+        background-size:105%;
+        background-position:center;
+
+    }
+
+    to{
+
+        background-size:112%;
+        background-position:center;
+
+    }
+
+}
+
+.capa{
+
+    width:100%;
+    min-height:100vh;
+
+    backdrop-filter:blur(3px);
+
+    padding:70px 10%;
+
+}
+
+header{
+
+    margin-bottom:60px;
+
+}
+
+header h1{
+
+    font-size:58px;
+
+    margin-bottom:12px;
+
+}
+
+header h2{
+
+    font-size:36px;
+
+    font-weight:normal;
+
+    margin-bottom:15px;
+
+}
+
+header p{
+
+    font-size:22px;
+
+    color:#f1f1f1;
+
+    max-width:700px;
+
+    line-height:35px;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.20);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    transition:.45s;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.card h3{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    font-size:19px;
+
+    line-height:30px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="capa">
+
+<header>
+
+<h1>Day ❤️</h1>
+
+<h2>Hola Day.</h2>
+
+<p>
+
+Qué bueno verte por aquí.
+
+Cada tarjeta guarda un pequeño momento.
+Tómate tu tiempo para descubrirlos.
+
+</p>
+
+</header>
+
+
+<div class="grid">
+
+<div class="card">
+
+<h3>📜 Nota del día</h3>
+
+<p>
+
+Aquí encontrarás las palabras que escribí para ti.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>❤️ Recuerdos</h3>
+
+<p>
+
+Pequeños momentos que vale la pena volver a vivir.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🎁 Canjes</h3>
+
+<p>
+
+Cada invitación es una promesa para compartir juntos.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🎥 Videos</h3>
+
+<p>
+
+Algunas historias se disfrutan mejor en movimiento.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
